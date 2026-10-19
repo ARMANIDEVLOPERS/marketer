@@ -1,0 +1,192 @@
+import { CaseStudy, Testimonial, ServiceItem } from '../types';
+
+export const MARKETER_INFO = {
+  name: 'Elena Vance',
+  role: 'Senior Digital Growth & Performance Marketing Strategist',
+  location: 'Available Globally · Remote & Consultative',
+  experienceYears: 8,
+  totalManagedSpend: '$8.5M+',
+  averageRoas: '4.4x',
+  brandsScaled: '65+',
+  speedImprovementAvg: '+62%',
+  email: 'elena@vanguardgrowth.io',
+  phone: '+1 (415) 890-4219',
+};
+
+export const SERVICES_LIST: ServiceItem[] = [
+  {
+    number: '01',
+    title: 'Facebook & Instagram Product Promotion',
+    tagline: 'High-converting Meta ad campaigns engineered for immediate return on ad spend (ROAS).',
+    description: 'We architect complete full-funnel paid social machines on Facebook and Instagram. From creative hook testing and dynamic catalog feeds to high-intent Advantage+ shopping campaigns and CAPI server-side tracking, we turn ad spend into scaled, repeatable revenue.',
+    deliverables: [
+      'Full-funnel Meta Ads account structure (Prospecting, Consideration, Retargeting)',
+      'Creative strategy: Video UGC frameworks, scroll-stopping hooks & static carousels',
+      'Meta Conversions API (CAPI) & first-party server-side tracking resilience',
+      'Dynamic Product Ads (DPA) synced with Shopify, WooCommerce, or custom catalogs',
+      'Audience segmentation, LTV targeting & churn prevention campaigns',
+    ],
+    metricsAchieved: 'Average 4.4x ROAS across direct-to-consumer and lifestyle retail',
+  },
+  {
+    number: '02',
+    title: 'High-Intent Technical & Content SEO',
+    tagline: 'Climb Google rankings for searches that actually drive qualified commercial buyers.',
+    description: 'Traffic without intent is useless vanity. We focus on search engine optimization that captures buyers with active purchase intent. We solve deep architectural crawl bottlenecks, execute structured data schema, and build authoritative topical clusters.',
+    deliverables: [
+      'Comprehensive technical site audit (crawl budget, indexation, duplicate content)',
+      'High-commercial intent keyword mapping & competitor gap exploitation',
+      'Topical authority content clustering & on-page semantic optimization',
+      'Structured Schema.org markup (Product, Organization, Review, FAQ)',
+      'White-hat editorial backlink acquisition & digital PR authority building',
+    ],
+    metricsAchieved: '+210% average organic traffic increase within 6 months',
+  },
+  {
+    number: '03',
+    title: 'Website Boosting & Conversion Rate Optimization (CRO)',
+    tagline: 'Lightning-fast load times and frictionless user journeys that maximize conversion rates.',
+    description: 'Slow websites kill paid ad budgets and drop Google rankings. We perform surgical Core Web Vitals optimization to bring mobile load times under 1.2 seconds, streamline checkout friction, and systematically raise conversion rates through data-driven testing.',
+    deliverables: [
+      'Core Web Vitals acceleration (LCP under 1.5s, CLS near zero, INP < 100ms)',
+      'JavaScript bundle trimming, image NextGen compression, and caching protocols',
+      'Mobile checkout UX audit & one-click purchasing flow implementation',
+      'Heatmap and session recording analysis for drop-off bottleneck removal',
+      'Data-backed A/B split testing on key landing page elements and CTAs',
+    ],
+    metricsAchieved: 'Average PageSpeed score boost from 42 to 94+; +34% conversion lift',
+  },
+];
+
+export const CASE_STUDIES: CaseStudy[] = [
+  {
+    id: 'aura-living',
+    title: 'Scaling an Artisan DTC Brand to $340K/Month with Advantage+ Meta Ads',
+    client: 'Aura Living Goods',
+    industry: 'Home & Living DTC',
+    category: 'social_ads',
+    categoryLabel: 'Facebook & Instagram Ads',
+    image: '/src/assets/images/case_meta_ecommerce_1792425644399.jpg',
+    summary: 'Restructured fragmented ad sets into high-intent Advantage+ shopping campaigns with creative UGC hooks, achieving a 4.8x blended ROAS.',
+    challenge: 'Aura Living was stuck at $68K/month with inconsistent Facebook ad performance. Their cost-per-acquisition (CPA) was climbing ($48 CPA on $85 AOV products), and creative fatigue burned out ads every 10 days.',
+    solution: 'Implemented a streamlined 3-tier campaign hierarchy: Advantage+ Shopping Campaigns for automated bidding, a weekly creative sandbox testing UGC product hooks and unboxing reels, and dynamic catalog ads targeting cart abandoners.',
+    results: [
+      { label: 'Blended ROAS', value: '4.8x', detail: 'Increased from 1.9x previous baseline' },
+      { label: 'Monthly Revenue', value: '$340K', detail: 'Grew from $68K/mo in 90 days' },
+      { label: 'CPA Reduction', value: '-62%', detail: 'Cost-per-acquisition dropped to $18.20' },
+      { label: 'Ad Spend Scaled', value: '$72K/mo', detail: 'Efficiently scaled while preserving margins' },
+    ],
+    timeline: '3 Months (Active Management)',
+    servicesUsed: ['Meta Ads Management', 'Creative UGC Direction', 'Conversions API (CAPI) Integration'],
+  },
+  {
+    id: 'nexus-analytics',
+    title: 'Dominating B2B Search Rankings with Intent-Driven Technical SEO',
+    client: 'Nexus Cloud Analytics',
+    industry: 'Enterprise SaaS',
+    category: 'seo',
+    categoryLabel: 'Technical & Organic SEO',
+    image: '/src/assets/images/case_seo_analytics_1792425644924.jpg',
+    summary: 'Fixed critical JavaScript rendering crawl blocks and created 14 high-intent comparison hubs, driving 285% more organic enterprise demo requests.',
+    challenge: 'Nexus had a heavy single-page app that Googlebot struggled to index. Over 60% of product pages were orphaned, and high-value search terms like "cloud spend monitoring" were dominated by legacy competitors.',
+    solution: 'Re-architected server-side rendering for search bots, implemented clean canonicalization, authored 14 comparison and solution topic hubs, and earned 38 tier-1 industry publication backlinks.',
+    results: [
+      { label: 'Organic Traffic', value: '+285%', detail: 'From 18,200 to 70,100 qualified monthly visits' },
+      { label: 'Top 3 Keywords', value: '34', detail: 'High-intent commercial terms on Page 1' },
+      { label: 'Pipeline Generated', value: '$1.8M', detail: 'Direct inbound enterprise pipeline' },
+      { label: 'Organic Demo Bookings', value: '+140%', detail: 'Month-over-month sustained conversion' },
+    ],
+    timeline: '5 Months Execution',
+    servicesUsed: ['Technical SEO Audit', 'Topic Cluster Strategy', 'Structured Schema Implementation'],
+  },
+  {
+    id: 'urban-strides',
+    title: 'Core Web Vitals Overhaul: Speed Boost from 38 to 96 & +48% Mobile Conversions',
+    client: 'Urban Strides Footwear',
+    industry: 'Athletic Fashion',
+    category: 'speed_cro',
+    categoryLabel: 'Website Speed & CRO',
+    image: '/src/assets/images/case_meta_ecommerce_1792425644399.jpg',
+    summary: 'Stripped 4.2MB of bloated third-party scripts, lazy-loaded visual assets, and rebuilt the checkout flow to capture lost mobile revenue.',
+    challenge: 'Urban Strides was spending $35K/month on Instagram ads, but 64% of visitors bounced before the page finished loading (6.4s mobile load time). Mobile conversion rate was sluggish at 1.1%.',
+    solution: 'Executed a complete website speed boost: consolidated tracking scripts via server-side tagging, converted all imagery to responsive WebP, eliminated render-blocking CSS, and reduced checkout from 4 pages to 1 streamlined step.',
+    results: [
+      { label: 'Mobile PageSpeed', value: '96 / 100', detail: 'Boosted from 38/100 on Google PageSpeed' },
+      { label: 'Load Time', value: '1.1s', detail: 'Reduced from 6.4 seconds on 4G' },
+      { label: 'Mobile Conversion Rate', value: '2.4%', detail: '+48% relative conversion increase' },
+      { label: 'Bounce Rate', value: '23%', detail: 'Dropped from 58% site-wide bounce rate' },
+    ],
+    timeline: '4 Weeks Sprint',
+    servicesUsed: ['Core Web Vitals Optimization', 'Mobile UX & Checkout CRO', 'Tag Manager Script Consolidation'],
+  },
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: '1',
+    quote: 'Elena completely transformed our Meta advertising. Before working with her, we were losing money on Facebook ads with CPAs over $50. She overhauled our video creatives and dialed in our Advantage+ campaigns. Within 60 days, we reached a 4.6x ROAS and scaled our monthly sales past $200k.',
+    author: 'Marcus Vance',
+    role: 'Founder & CEO',
+    company: 'Lumina Botanicals',
+    initials: 'MV',
+    rating: 5,
+    highlightMetric: '4.6x ROAS & $200K+ Monthly Revenue',
+    serviceCategory: 'Facebook & Instagram Ads',
+  },
+  {
+    id: '2',
+    quote: 'Our SaaS platform was practically invisible on Google for high-intent search terms. Elena diagnosed our JavaScript indexing bottlenecks and built a topical authority structure that doubled our organic inbound demo requests in four months. She is exceptionally rigorous with data.',
+    author: 'Priya Patel',
+    role: 'VP of Growth',
+    company: 'CloudScale Technologies',
+    initials: 'PP',
+    rating: 5,
+    highlightMetric: '+140% Inbound Demo Inquiries',
+    serviceCategory: 'Technical SEO',
+  },
+  {
+    id: '3',
+    quote: 'Website boosting was the highest ROI investment we made this year. Elena took our mobile speed from a painful 38 to a blazing 96. Our mobile checkout bounce rate was cut in half, directly increasing our store conversion rate by 48%. If your site is slow, hire Elena immediately.',
+    author: 'David Ross',
+    role: 'Co-Founder & COO',
+    company: 'Nomad Leatherworks',
+    initials: 'DR',
+    rating: 5,
+    highlightMetric: '38 → 96 Speed Score & +48% Mobile CRO',
+    serviceCategory: 'Website Boosting & Speed',
+  },
+  {
+    id: '4',
+    quote: 'What makes Elena stand out from typical agencies is that she does not rely on vanity metrics like impressions or clicks. Everything she touches is tied to bottom-line profit, customer acquisition cost, and organic revenue ranking.',
+    author: 'Sarah Chen',
+    role: 'Marketing Director',
+    company: 'Veloce Activewear',
+    initials: 'SC',
+    rating: 5,
+    highlightMetric: '-54% Customer Acquisition Cost',
+    serviceCategory: 'Full-Funnel Growth',
+  },
+];
+
+export const FAQS = [
+  {
+    question: 'How do you run Facebook & Instagram ads differently from other agencies?',
+    answer: 'Most agencies set up generic interest targeting and leave it on autopilot. We use modern creative-first strategies aligned with Meta’s AI algorithms (Advantage+ Shopping, dynamic creative testing, UGC hooks) paired with robust first-party server-side Conversions API (CAPI) tracking to prevent tracking loss from iOS privacy updates.',
+  },
+  {
+    question: 'How long does it take to see results from SEO vs. Paid Social Ads?',
+    answer: 'Facebook & Instagram campaigns can start driving profitable customer purchases within 7 to 14 days of launch. SEO is a compounding channel: initial technical fixes and indexation boosts often yield rankings jumps in 4 to 8 weeks, with major organic revenue growth compounding around months 3 to 6.',
+  },
+  {
+    question: 'What is included in "Website Boosting"?',
+    answer: 'Website boosting addresses both speed and conversion rate optimization (CRO). Technically, we audit your code, compress media into NextGen formats, eliminate render-blocking scripts, and guarantee 90+ Core Web Vitals on Google PageSpeed. Experientially, we remove mobile friction points in your navigation and checkout funnel.',
+  },
+  {
+    question: 'What platforms and tech stacks do you work with?',
+    answer: 'For e-commerce: Shopify, WooCommerce, BigCommerce, Magento, and custom headless setups. For B2B and content sites: WordPress, Next.js, Webflow, React, and Laravel. All Meta Pixel/CAPI integrations and Google Search Console audits are performed natively.',
+  },
+  {
+    question: 'What is your working model and minimum engagement?',
+    answer: 'We offer two models: (1) Intensive 4-week Sprints for Website Speed Boosting and Technical SEO Audits; and (2) Monthly Performance Growth Retainers for ongoing Meta Ads management and organic search scaling. Inquire via the audit form for custom scoping.',
+  },
+];
